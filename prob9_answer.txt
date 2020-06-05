@@ -1,0 +1,2 @@
+Singular values of A: [2.44948974 1]
+Singular values of B: [2 1 1]
