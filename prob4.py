@@ -34,7 +34,9 @@ print('kmax=',k[len(k)-1])
 
 #d)
 nbins=5
-plt.hist(p_k,nbins)  #histogram of power spectrum
+plt.hist(p_k,bins=np.linspace(k[0],k[n-1],6))  #histogram of power spectrum
+plt.xlabel('k')
+plt.ylabel('P(k)')
 plt.title('Histogram of power spectrum')
 plt.show()
 
