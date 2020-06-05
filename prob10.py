@@ -22,6 +22,8 @@ x=np.linspace(xmin,xmax,n)
 y=np.zeros(n)
 for i in range(n):
     y[i]=f(x[i])
+plt.plot(x,y)
+plt.show()    
 k=2*np.pi*np.fft.fftfreq(n,d=dx) 
 factor=np.exp(-1j*k*xmin)
 ft=np.fft.fft(y,norm='ortho')
